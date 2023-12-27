@@ -1,0 +1,217 @@
+<!-- This is a comment -->
+<!-- HTML uses tags in the following way: <tagname>content</tagname> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- The head tag is not the page we see. It contains metadata, the title (browser tab), links to related file (ie styles and scripts) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="html5 semantic tags example" />
+    <meta name="keywords" content="html5, html cheatsheet" />
+    <title>HTML Cheatsheet</title>
+  </head>
+  <body>
+    <!-- The actual content we see -->
+
+    <!-- Headings, 6 of them -->
+    <h1>Welcome to the HTML Cheatsheet</h1>
+
+    <hr />
+    <br />
+
+    <h2>This is a collection of headings:</h2>
+    <h3>Enjoy!</h3>
+    <h4>Headings come in 6 flavors</h4>
+    <h5>From 1, the biggest, baddest one at the top.</h5>
+    <h6>To 6. This tiny one.</h6>
+
+    <!--Line breaks: -->
+    <br /><!-- or just <br> It is a self-closing tag -->
+    <!-- a line! -->
+    <hr />
+    <br />
+
+    <!-- Paragraphs, Inline elements and block elements -->
+    <h2>Paragraphs, inline elements and block elements</h2>
+    <p>There are two types of tags (elements), Inline and Block.</p>
+    <p>
+      Inline elements do not start a new line and take only the necessary width.
+      For example, <span>span</span>, images, links and some styling such as
+      <strong>strong</strong> or <em>emphasize</em>.
+    </p>
+    <p>
+      Block elements, meanwhile, start on a new line and take up the whole
+      width. Some examples are headings, div, paragraphs (like this one) and
+      forms.
+    </p>
+    <p>
+      Tags can have attributes, they provide information about an element. They
+      are placed within the open tag. A good example of this is the
+      <a href="#" target="_blank">link</a> tag.
+    </p>
+
+    <hr />
+    <br />
+
+    <!-- Lists -->
+    <h2>Lists</h2>
+    <h3>Unordered lists</h3>
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+
+    <h3>Ordered lists</h3>
+    <ol>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ol>
+
+    <hr />
+    <br />
+
+    <!-- Table -->
+    <h2>Tables</h2>
+    <table>
+      <thead>
+        <tr>
+          <!-- Table row -->
+          <th>Some</th>
+          <th>Headings</th>
+          <th>For</th>
+          <th>My</th>
+          <th>Table</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Table data</td>
+          <td>Table data</td>
+          <td>Table data</td>
+          <td>Table data</td>
+          <td>Table data</td>
+        </tr>
+        <tr>
+          <td>Table data</td>
+          <td>Table data</td>
+          <td>Table data</td>
+          <td>Table data</td>
+          <td>Table data</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <strong>Fun fact!</strong> We used to use tables to make the whole layout.
+      It's nice to not have to. 1999 can stay in 1999.
+    </p>
+
+    <hr />
+    <br />
+
+    <!-- Forms -->
+    <h2>Forms</h2>
+    <form action="" method="POST">
+      <div>
+        <label>A label for my form field </label>
+        <input type="text" name="anIdentifier" value="The default value" />
+      </div>
+      <div>
+        <label>Another label for another form field </label>
+        <input
+          type="text"
+          name="anotherIdentifier"
+          placeholder="A placeholder"
+        />
+      </div>
+      <div>
+        <label>Textarea. For bigger texts: </label>
+        <textarea name="message"></textarea>
+      </div>
+      <br />
+      <div>
+        <label>Feel free to select an option: </label>
+        <select name="select">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+      <p>There are also input types that add some validation:</p>
+      <div>
+        <label>Such as Email </label>
+        <input type="email" name="email" />
+      </div>
+      <div>
+        <label>Or number: </label>
+        <input type="number" name="number" />
+      </div>
+      <br />
+      <div>
+        <label>Let's have a date! </label>
+        <input type="date" name="date" />
+      </div>
+      <br />
+      <input type="submit" name="submit" value="submit" />
+    </form>
+
+    <hr />
+    <br />
+
+    <!-- Buttons -->
+    <h2>Buttons</h2>
+    <button click="">Click me!</button>
+    <p>To make buttons work you need to add javascript. Oops!</p>
+
+    <hr />
+    <br />
+
+    <!-- Images -->
+    <h2>Images</h2>
+    <img src="./assets/sample-img.jpg" alt="A sample image." />
+    <p>
+      The alt attribute is important. It appears in place of the image if for
+      whatever reason it can't load. But also, from an accesibility perspective,
+      it's what screen readers read.
+    </p>
+
+    <hr />
+    <br />
+
+    <!-- Quotations -->
+    <h2>Quotations</h2>
+    <blockquote cite="Someone once said">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid animi
+      provident non iusto aliquam qui cum incidunt modi eligendi totam sint a
+      eaque magni ea, ab quod delectus illo odit.
+    </blockquote>
+    <br />
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome!</p>
+    <br />
+    <p><cite>HTML Cheatsheet</cite> by Nat</p>
+
+    <hr />
+    <br />
+
+    <!-- HTML 5 Semantic tags -->
+    <h2>Also important: HTML5 Semantic Tags</h2>
+    <br />
+    <img
+      src="./assets/html5-semantic-tags.png"
+      alt="A diagram of the tags in the page layout"
+    />
+    <br />
+    <a href="blog.html" target="_blank">Check them out!</a>
+
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
